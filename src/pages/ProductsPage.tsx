@@ -110,7 +110,7 @@ const ProductsPage = () => {
     <div className="grid grid-cols-10 gap-10">
       <form
         className="space-y-5 col-span-2"
-        onSubmit={(e) => {
+        onSubmit={(e: any) => {
           e.preventDefault();
           const brand_ids = [...e.target.elements["brand"]]
             .filter((item) => item.checked)
