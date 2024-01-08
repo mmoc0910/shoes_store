@@ -14,10 +14,14 @@ const LayoutAuthentication: FC<LayoutAuthenticationProps> = ({
   return (
     <div className="w-full overflow-hidden xl:h-auto xl:overflow-auto">
       <div className="w-full min-h-screen p-6 md:p-10 bg-lite dark:bg-darkbg">
-        <Link to={"/"} className="inline-block mb-5 md:mb-16">
+
+        <div className="w-full sm:w-[556px] rounded-xl bg-white px-[20px] py-[30px] sm:px-[60px] sm:py-[20px] mx-auto relative z-[1] dark:bg-dark-secondary">
+        <Link to={"/"} 
+        // className="inline-block mb-5 md:mb-16"
+        style={{display:"flex",justifyContent: "center"}}
+        >
           <Logo />
         </Link>
-        <div className="w-full sm:w-[556px] rounded-xl bg-white px-[20px] py-[30px] sm:px-[60px] sm:py-[20px] mx-auto relative z-[1] dark:bg-dark-secondary">
           <h1 className="text-lg font-semibold md:text-xl text-text1 mb-[5px] md:mb-[10px] text-center dark:text-white">
             {heading}
           </h1>

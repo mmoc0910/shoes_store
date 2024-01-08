@@ -102,7 +102,8 @@ const CartPage = () => {
       dispatch(setCart(result.data));
       console.log("result checkout - ", result.data);
       toast.success("Đặt hàng thành công");
-      navigate("/");
+      // navigate("/");
+      navigate("/order")
     } catch (error) {
       console.log(error);
     }

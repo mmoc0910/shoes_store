@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../store/configureStore";
 import { toast } from "react-toastify";
 import { setCart } from "../store/cart/cartSlice";
+import { Tag } from 'antd';
 
 const ProductDetailPage = () => {
   const { product_id } = useParams();
@@ -77,6 +78,10 @@ const ProductDetailPage = () => {
         <div className="col-span-5 space-y-2">
           <h2 className="text-xl font-semibold">{product_name}</h2>
           <p className="text-xl font-semibold">${export_price}</p>
+          <div style={ quantity >0?
+            {display:"none"} : { display:"flex"} } >
+          <Tag style={{padding:"10px"}} color="error"><strong style={{fontSize:"20px"}}>Hết hàng</strong></Tag>
+            </div>
           <div className="w-full">
             <table className="table-auto border-collapse border-2 border-slate-400 rounded-xl">
               <thead>
@@ -90,6 +95,9 @@ const ProductDetailPage = () => {
                   <td className="font-medium text-start text-primary20 border-collapse border border-slate-400 px-2 py-1">
                     Size
                   </td>
+                  <td className="font-medium text-start text-primary20 border-collapse border border-slate-400 px-2 py-1">
+                    Số lượng
+                  </td>
                 </tr>
               </thead>
               <tbody>
@@ -102,6 +110,9 @@ const ProductDetailPage = () => {
                   </td>
                   <td className="text-start border-collapse border border-slate-400 px-2 py-1">
                     {size_number}
+                  </td>
+                  <td className="text-start border-collapse border border-slate-400 px-2 py-1">
+                    {quantity}
                   </td>
                 </tr>
               </tbody>
@@ -147,7 +158,9 @@ const ProductDetailPage = () => {
               </svg>
             </span>
           </div> */}
-          <div className="flex items-center gap-5 pt-5">
+          <div className="flex items-center gap-5 pt-5"
+          style={ quantity==0?
+            {display:"none"} : { display:"flex"} } >
             <button
               className="bg-primary rounded-lg px-4 py-3 leading-none text-white font-medium"
               onClick={() => handleAddProductToCart(quantity)}

@@ -13,7 +13,7 @@ interface HeaderProps {}
 const menu = [
   { to: "/", title: "Trang chủ" },
   { to: "/product/list-product", title: " Sản phẩm" },
-  // { to: "/order", title: "Vận chuyển" },
+  { to: "/order", title: "Vận chuyển" },
 ];
 
 export const Header: FC<HeaderProps> = () => {

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import classNames from "../../utils/classNames";
+import logo from "../../assets/logo1.png";
 
 function Logo({ className = "" }: { className?: string }) {
   return (
@@ -10,7 +11,8 @@ function Logo({ className = "" }: { className?: string }) {
         className
       )}
     >
-      Shoes<span className="text-lg font-semibold">_store</span>
+      {/* Shoes<span className="text-lg font-semibold">_store</span> */}
+      <img src={logo} style={{width:"150px"}}/>
     </Link>
   );
 }

@@ -10,7 +10,7 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 const ProductsPage = lazy(() => import("./pages/ProductsPage"));
 const ProductDetailPage = lazy(() => import("./pages/ProductDetailPage"));
 const CartPage = lazy(() => import("./pages/CartPage"));
-// const OrderPage = lazy(() => import("./pages/OrderPage"));
+const OrderPage = lazy(() => import("./pages/OrderPage"));
 
 function App() {
   return (
@@ -34,10 +34,10 @@ function App() {
               path="/cart"
               element={<CartPage />}
             />
-            {/* <Route
+            <Route
               path="/order"
               element={<OrderPage />}
-            /> */}
+            />
           </Route>
           <Route path="/sign-in" element={<SigninPage />} />
           <Route path="/sign-up" element={<SignupPage />} />
