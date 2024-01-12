@@ -4,16 +4,22 @@ import { Autoplay } from "swiper/modules";
 const sliders = [
   {
     title: "slide 1",
-    img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://sneakerbardetroit.com/wp-content/uploads/2017/02/Nike-BHM-Black-History-Month-2017-Collection.jpg",
   },
   {
     title: "slide 2",
-    img: "https://images.unsplash.com/photo-1551489186-ccb95a1ea6a3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://giaysneaker.store/media/magefan_blog/reebok-va-harry-potter-bo-suu-tap-giay-doc-dao-lay-cam-hung-tu-the-gioi-phu-thuy.jpg",
+  
   },
   {
     title: "slide 3",
-    img: "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://obs.line-scdn.net/0hj0NBYEbCNR9zOx5C-_tKSEltNnBAVyYcFw1kHDBVaysLCSJAS1V9Kl89aikMWXJBHVV-cFQ-Li4ODXUZHVR8/w1200",
   },
+
+{
+  title: "slide 4",
+  img: "https://bizweb.dktcdn.net/100/427/145/files/giay-mlb-chinh-hang-sneaker-authentic-0909665979.jpg?v=1670207891149"
+}
 ];
 
 const SliderHomePage = () => {

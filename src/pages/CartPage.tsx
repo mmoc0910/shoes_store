@@ -86,7 +86,7 @@ const CartPage = () => {
       console.log("data - ", data);
       await axios.post(
         "/order/check-out",
-        { ...data, shipPrice: 20000 },
+        { ...data, shipPrice: 30000 },
         {
           headers: { Authorization: `Bearer ${auth.token}` },
         }
@@ -102,8 +102,8 @@ const CartPage = () => {
       dispatch(setCart(result.data));
       console.log("result checkout - ", result.data);
       toast.success("Đặt hàng thành công");
-      // navigate("/");
-      navigate("/order")
+      navigate("/");
+      // navigate("/order")
     } catch (error) {
       console.log(error);
     }
