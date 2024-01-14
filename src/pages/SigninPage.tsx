@@ -59,7 +59,7 @@ function SigninPage() {
       console.log("data - ", data);
       const result = await axios.post<{ data: string }>("/account/login", data);
       console.log("result - ", result.data);
-      dispatch(setAuth({ userName: data.userName, token: result.data.data }));
+      dispatch(setAuth({ userName: data.userName, token: result.data.token }));
     } catch (error) {
       console.log(error);
     }
