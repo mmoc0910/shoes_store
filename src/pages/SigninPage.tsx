@@ -57,7 +57,7 @@ function SigninPage() {
   const onSubmit = async (data: { userName: string; password: string }) => {
     try {
       console.log("data - ", data);
-      const result = await axios.post<{ data: string }>("/account/login", data);
+      const result = await axios.post("/account/login", data);
       console.log("result - ", result.data);
       dispatch(setAuth({ userName: data.userName, token: result.data.token }));
     } catch (error) {
